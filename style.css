@@ -807,64 +807,6 @@
    background-color: white;
    color: #1A1A1D;
 }
-.friend{
-   position: relative;
-}
-.friend h1{
-   font-size: 70px;
-   color: #ff004c;
-   text-align: center;
-   position: relative;
-   top: 5%;
-   margin-top: 25px;
-}
-.finfo{
-   position: absolute;
-   top: 36%;
-   left: 12%;
-}
-.finfo h1{
-   color: #ff004c;
-   font-size: 40px;
-}
-.finfo p{
-   color: #fff;
-   margin-right: 990px;
-   font-size: 22px;
-}
-.fform form input {
-   width: 500px;
-   height: 45px;
-   border-radius: 4px;
-   text-align: center;
-   margin-top: 20px;
-   margin-bottom: 20px;
-   outline: none;
-   border: 3px solid #950740;
-   background-color: #fff;
-   color: #182628;
-}
-.fform form button{
-   background: transparent;
-   border: 2px solid #950740;
-   color: #fff;
-   border-radius: 30px;
-   padding: 10px 30px;
-   font-size: 15px;
-   cursor: pointer;
-   position: absolute;
-   left: 30%;
-}
-.fform{
-   position: absolute;
-   left: 52%;
-   top: 67%;
-}
-.anime{
-   position: absolute;
-   left: 55%;
-   top: 22%;
-}
 .dnprocess iframe{
    position: absolute;
    top: 60%;
