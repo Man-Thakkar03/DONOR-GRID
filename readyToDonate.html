@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/b51db65dc3.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -130,10 +131,11 @@
             </div>
             <div class="col-2">
                 <h3> GET NOTIFIED</h3>
-                <form>
-                    <input type="email" placeholder="Your Email Address" required>
+                <form id="subscribeForm>
+                    <input type="email" name="email" placeholder="Your Email Address" required>
                     <br>
                     <button type="submit">SUBMIT NOW</button>
+                    <div class="responseMessage"></div>
                 </form>
             </div>
             <div class="col-3">
@@ -147,6 +149,41 @@
     <div class="copyright">
                 <p>Copyright © Man Thakkar. <i class="fa-solid fa-heart"></i></p>
             </div>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("subscribeForm");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    fetch("get_notified.php", {
+      method: "POST",
+      body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+      Swal.fire({
+  icon: 'success',
+  title: 'Registered Successfully!',
+  text: data,
+  confirmButtonColor: '#e63946', // Blood donation red
+  background: '#f1faee',          // Light background
+  color: '#1d3557',               // Dark blue text
+  timer: 3000,
+  timerProgressBar: true,
+  showClass: {
+    popup: 'animate_animated animate_fadeInDown'
+  },
+  hideClass: {
+    popup: 'animate_animated animate_fadeOutUp'
+  }
+});
+    });
+  });
+});
+</script>
 </body>
 
 </html>
