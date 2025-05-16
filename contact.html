@@ -88,6 +88,30 @@
     <div class="copyright">
                 <p>Copyright © Man Thakkar. <i class="fa-solid fa-heart"></i></p>
             </div>
+    <script>
+ document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const form = this;
+    const formData = new FormData(form);
+
+    fetch("contact_submit.php", {
+      method: "POST",
+      body: formData
+    })
+    .then(res => res.text())
+    .then(data => {
+      if (data.toLowerCase().includes("success")) {
+        Swal.fire("Sent!", "Your message has been sent successfully!", "success");
+        form.reset();
+      } else {
+        Swal.fire("Oops!", data, "error");
+      }
+    })
+    .catch(() => {
+      Swal.fire("Error", "Something went wrong while sending your message.", "error");
+    });
+  });
+</script>
 
              <script>
 document.addEventListener("DOMContentLoaded", function () {
