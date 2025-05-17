@@ -1,22 +1,54 @@
 <?php
-$conn = new mysqli("localhost", "root", "", "blood_donation");
-if ($conn->connect_error) die("Connection failed: " . $conn->connect_error);
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$phone = $_POST['phone'];
-$blood = $_POST['blood_group'];
-$address = $_POST['address'];
-$landmark = $_POST['landmark'];
 
-$stmt = $conn->prepare("INSERT INTO donors (full_name, email, phone, blood_group, address, landmark)
-                        VALUES (?, ?, ?, ?, ?, ?)");
-$stmt->bind_param("ssssss", $name, $email, $phone, $blood, $address, $landmark);
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Connect to database
+    $conn = new mysqli("localhost", "root", "", "blood_donation");
 
-if ($stmt->execute()) {
-    echo "Donor registered successfully!";
-} else {
-    echo "Error: " . $stmt->error;
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    // Collect and sanitize form data
+    $fullname = $_POST['fullname'] ?? '';
+    $mobile = $_POST['mobile'] ?? '';
+    $email = $_POST['email'] ?? '';
+    $password = $_POST['password'] ?? '';
+    $blood_group = $_POST['blood_group'] ?? '';
+    $birth_date = $_POST['birth_date'] ?? '';
+    $gender = $_POST['gender'] ?? '';
+    $weight = $_POST['weight'] ?? '';
+    $show_mobile = $_POST['show_mobile'] ?? '';
+    $state = $_POST['state'] ?? '';
+    $city = $_POST['city'] ?? '';
+    $zipcode = $_POST['zipcode'] ?? '';
+    $area = $_POST['area'] ?? '';
+    $landmarks = $_POST['landmarks'] ?? '';
+    $sms_alert = isset($_POST['sms_alert']) ? 1 : 0;
+
+    // Check if all required fields are filled
+    if (
+        $fullname && $mobile && $email && $password && $blood_group &&
+        $birth_date && $gender && $weight && $show_mobile && $state &&
+        $city && $zipcode && $area && $landmarks
+    ) {
+        $sql = "INSERT INTO donors (fullname, mobile, email, password, blood_group, birth_date, gender, weight, show_mobile, state, city, zipcode, area, landmarks, sms_alert)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("ssssssssssssssi", $fullname, $mobile, $email, $password, $blood_group, $birth_date, $gender, $weight, $show_mobile, $state, $city, $zipcode, $area, $landmarks, $sms_alert);
+
+        if ($stmt->execute()) {
+            echo "Donor registered successfully.";
+        } else {
+            echo "Error: " . $stmt->error;
+        }
+
+        $stmt->close();
+    } else {
+        echo "Please fill all required fields.";
+    }
+
+    $conn->close();
 }
-$conn->close();
 ?>
