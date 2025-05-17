@@ -2,14 +2,15 @@
 <html>
 
 <head>
-    <title>DONOR'S GRID🩸</title>
+    <title>Donor's GRID🩸</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/b51db65dc3.js" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
 </head>
 
 <body>
@@ -30,78 +31,78 @@
     <section class="info">
         <div class="loinfo">
             <h3>Login Information</h3>
-            <form1 action="">
+            <form id="donorForm"  method="post">
             <div class="fcol">
-                <label for="name">FULL NAME</label>
-                <input type="text" id="name" name="NAME" placeholder="YOUR NAME">
-                <label for="number">MOBILE NUMBER</label>
-                <input type="tel" id="number" name="NUMBER" placeholder="YOUR NUMBER">
+                <label >FULL NAME</label>
+                <input type="text"  name="fullname" placeholder="YOUR NAME" >
+                <label >MOBILE NUMBER</label>
+                <input type="text"  name="mobile" placeholder="YOUR NUMBER" >
             </div>
             <div class="scol">
-                <label for="name">EMAIL</label>
-                <input type="email" id="name" name="NAME" placeholder="YOUR EMAIL">
-                <label for="number">PASSWORD</label>
-                <input type="password" id="number" name="NUMBER" placeholder="YOUR PASSWORD">
+                <label>EMAIL</label>
+                <input type="email"  name="email" placeholder="YOUR EMAIL" >
+                <label >PASSWORD</label>
+                <input type="password"  name="password" placeholder="YOUR PASSWORD" >
             </div>
         </div>
         <div class="doninfo">
             <h3>Donor Information</h3>
             <div class="fcol">
-                <label for="name">BLOOD GROUP</label>
-                <select id="name" name="BLOOD GROUP">
+                <label >BLOOD GROUP</label>
+                <select  name="blood_group">
                     <option value="0">SELECT GROUP</option>
-                    <option value="1">A1+</option>
-                    <option value="2">A1-</option>
-                    <option value="3">A2+</option>
-                    <option value="4">A2-</option>
-                    <option value="5">B+</option>
-                    <option value="6">B-</option>
-                    <option value="7">A1B+</option>
-                    <option value="8">A1B-</option>
-                    <option value="9">A2B+</option>
-                    <option value="10">A2B-</option>
-                    <option value="11">AB+</option>
-                    <option value="12">AB-</option>
-                    <option value="13">O+</option>
-                    <option value="14">O-</option>
-                    <option value="15">A+</option>
-                    <option value="16">A-</option>
+                    <option value="A1+">A1+</option>
+                    <option value="A1-">A1-</option>
+                    <option value="A2+">A2+</option>
+                    <option value="A2-">A2-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="A1B+">A1B+</option>
+                    <option value="A1B-">A1B-</option>
+                    <option value="A2B+">A2B+</option>
+                    <option value="A2B_">A2B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
                 </select>
                 <label for="name">BIRTH DATE</label>
-                <input type="date" id="name" name="BIRTH DATE" placeholder="YOUR NUMBER">
+                <input type="date"  name="birth_date" placeholder="YOUR NUMBER" >
             </div>
             <div class="scol">
                 <label for="name">GENDER</label>
-                <select id="name" name="GENDER">
+                <select  name="gender">
                     <option value="0">SELECT GENDER</option>
                     <option value="MALE">MALE</option>
                     <option value="FEMALE">FEMALE</option>
                 </select>
                 <label for="name">WEIGHT</label>
-                <select id="name" name="WEIGHT">
+                <select  name="weight">
                     <option value="0">SELECT WEIGHT</option>
-                    <option value="WEIGHT">40KG-50KG</option>
-                    <option value="WEIGHT">50KG-60KG</option>
-                    <option value="WEIGHT">60KG-70KG</option>
-                    <option value="WEIGHT">70KG-80KG</option>
-                    <option value="WEIGHT">80KG-90KG</option>
-                    <option value="WEIGHT">90KG-100KG</option>
-                    <option value="WEIGHT">100KG-110KG</option>
-                    <option value="WEIGHT">110KG-120KG</option>
+                    <option value="1">40KG-50KG</option>
+                    <option value="2">50KG-60KG</option>
+                    <option value="3">60KG-70KG</option>
+                    <option value="4">70KG-80KG</option>
+                    <option value="5">80KG-90KG</option>
+                    <option value="6">90KG-100KG</option>
+                    <option value="7">100KG-110KG</option>
+                    <option value="8">110KG-120KG</option>
                 </select>
             </div>
         </div>
         <div class="coinfo">
             <h3>Contact Information</h3>
             <div class="fcol">
-                <label for="name">SHOW MOBILE</label>
-                <select id="name" name="SHOW MOBILE">
-                    <option value="YES">YES</option>
-                    <option value="NO">NO</option>
+                <label >SHOW MOBILE</label>
+                <select name="show_mobile">
+                    <option value="1">YES</option>
+                    <option value="0">NO</option>
                 </select>
-                <label for="number">STATE</label>
-                <select id="name" name="STATE">
-                    <option value="">SELECT STATE</option>
+                <label >STATE</label>
+                <select  name="state">
+                    <option value="0">SELECT STATE</option>
                     <option value="5">Andhra Pradesh</option>
                     <option value="26">Arunachal Pradesh</option>
                     <option value="14">Assam</option>
@@ -152,12 +153,12 @@
             </div>
             <div class="scol">
                 <label for="name">SMS ALERT</label>
-                <select id="name" name="SMS ALERT">
+                <select  name="sms_alert">
                     <option value="YES">YES</option>
                     <option value="NO">NO</option>
                 </select>
                 <label for="number">CITY</label>
-                <select id="name" name="CITY">
+                <select name="city">
                     <option value="0">SELECT STATE</option>
                     <option value="10">Adilabad</option>
                     <option value="477">Agra</option>
@@ -831,19 +832,19 @@
             </div>
             <div class="tcol">
                 <label for="name">ZIP CODE</label>
-                <input type="text" id="name" name="ZIP CODE" placeholder="YOUR ZIP CODE">
+                <input type="text" name="zipcode" placeholder="YOUR ZIP CODE">
                 <label for="number">AREA</label>
-                <input type="text" id="number" name="AREA" placeholder="YOUR AREA">
+                <input type="text" name="area" placeholder="YOUR AREA">
             </div>
             <div class="frow">
                 <label for="name">NEARBY LANDMARKS</label>
-                <input type="text" id="name" name="LANDMARKS" placeholder="NEARBY LANDMARKS">
+                <input type="text"  name="landmarks" placeholder="NEARBY LANDMARKS">
             </div>
-            <button>
+            <button type="submit">
                 SUBMIT
             </button>
         </div>
-    </form1>
+    </form>
     </section>
     <section class="bottom">
         <div class="footer">
@@ -857,7 +858,7 @@
             </div>
             <div class="col-2">
                 <h3> GET NOTIFIED</h3>
-                <form id="subscribeForm>
+                <form id="subscribeForm">
                     <input type="email" name="email" placeholder="Your Email Address" required>
                     <br>
                     <button type="submit">SUBMIT NOW</button>
@@ -875,7 +876,97 @@
     <div class="copyright">
                 <p>Copyright © Man Thakkar. <i class="fa-solid fa-heart"></i></p>
             </div>
-    <script>
+   <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("donorForm");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    let allFilled = true;
+
+    // Check if all fields are filled
+    for (let [key, value] of formData.entries()) {
+      if (!value.trim()) {
+        allFilled = false;
+        break;
+      }
+    }
+
+    if (!allFilled) {
+      Swal.fire({
+        icon: 'warning',
+        title: 'Registration Failed!',
+        text: 'Please fill in all fields before submitting.',
+        confirmButtonColor: '#e63946',
+        background: '#f1faee',
+        color: '#1d3557',
+        timer: 3000,
+        timerProgressBar: true,
+        showClass: {
+          popup: 'animate_animated animate_fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate_animated animate_fadeOutUp'
+        }
+      });
+      return; // Stop the fetch if fields are not filled
+    }
+
+    fetch("register_donor.php", {
+      method: "POST",
+      body: formData
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.text();
+    })
+    .then(data => {
+      Swal.fire({
+        icon: 'success',
+        title: 'Registered Successfully!',
+        text: data,
+        confirmButtonColor: '#e63946',
+        background: '#f1faee',
+        color: '#1d3557',
+        timer: 3000,
+        timerProgressBar: true,
+        showClass: {
+          popup: 'animate_animated animate_fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate_animated animate_fadeOutUp'
+        }
+      });
+    })
+    .catch(error => {
+      Swal.fire({
+        icon: 'error',
+        title: 'Registration Failed!',
+        text: 'Something went wrong. Please try again later.',
+        confirmButtonColor: '#e63946',
+        background: '#f1faee',
+        color: '#1d3557',
+        timer: 3000,
+        timerProgressBar: true,
+        showClass: {
+          popup: 'animate_animated animate_fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate_animated animate_fadeOutUp'
+        }
+      });
+      console.error("Fetch error:", error);
+    });
+  });
+});
+</script>
+
+
+            <script>
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("subscribeForm");
 
