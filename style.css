@@ -6,7 +6,7 @@
  .header{
     min-height: 100vh;
     width: 100%;
-    background-color: #1A1A1D;
+    background-color: #171719;
     background-size: cover;
     background-position: center;
  }
@@ -34,7 +34,7 @@
  .nav-links ul li a{
     color: #ff004c;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 18px;
 
  }
  .nav-links ul li::after{
@@ -128,7 +128,7 @@
     width: 100%;
     padding: 10px;
     border: 1px solid #ff004c;
-    background: #1A1A1D;
+    background: #171719;
     border-radius: 5px;
     outline: none;
     color: #fff;
@@ -159,7 +159,7 @@
     width: 100%;
     padding: 10px;
     border: 1px solid #ff004c;
-    background: #1A1A1D;
+    background: #171719;
     border-radius: 5px;
     outline: none;
     color: #fff;
@@ -182,7 +182,7 @@
     transform: translateX(10px) translateY(-23px);
     font-size: 0.65em;
     padding: 0 10px;
-    background: #1A1A1D;
+    background: #171719;
     border-left: 1px solid #ff004c;
     border-right: 1px solid #ff004c;
     letter-spacing: 0.2em;
@@ -194,7 +194,7 @@
     transform: translateX(10px) translateY(-23px);
     font-size: 0.65em;
     padding: 0 10px;
-    background: #1A1A1D;
+    background: #171719;
     border-left: 1px solid #ff004c;
     border-right: 1px solid #ff004c;
     letter-spacing: 0.2em;
@@ -226,7 +226,16 @@
  }
  .button button:active{
    background-color: white;
-   color: #1A1A1D;
+   color: #171719;
+ }
+.img{
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 900px;
+ }
+ .bhero{
+   width: 490px;
+   height: auto;
  }
  /*-----process-----*/
  .process{
@@ -254,7 +263,7 @@
    padding-left: 55px;
    padding-right: 500px;
    padding-top: 50px;
-   color: #1A1A1D;
+   color: #171719;
 }
 .actprocess h2{
    font-size: 40px;
@@ -293,7 +302,7 @@
 .header1{
    min-height: 150px;
    width: 100%;
-   background-color: #1A1A1D;
+   background-color: #171719;
    background-size: cover;
    background-position: center;
 }
@@ -311,7 +320,7 @@
 .nav-links1 ul li a{
    color: #ff004c;
    text-decoration: none;
-   font-size: 15px;
+   font-size: 18px;
 
 }
 .nav-links1 ul li::after{
@@ -330,7 +339,7 @@
    width: 100%;
    height: 500px;
    position: relative;
-   background-color: #1A1A1D;
+   background-color: #171719;
 }
 .loinfo .fcol label{
    flex-direction: column;
@@ -344,7 +353,7 @@
    width: 350px;
    padding: 10px;
    border: 1px solid #ff004c;
-   background: #1A1A1D;
+   background: #171719;
    border-radius: 5px;
    outline: none;
    color: #fff;
@@ -371,7 +380,7 @@
    width: 350px;
    padding: 10px;
    border: 1px solid #ff004c;
-   background: #1A1A1D;
+   background: #171719;
    border-radius: 5px;
    outline: none;
    color: #fff;
@@ -395,7 +404,7 @@
 .doninfo{
    width: 100%;
    height: 500px;
-   background-color: #1A1A1D;
+   background-color: #171719;
    position: relative;
 }
 .doninfo .fcol label{
@@ -411,7 +420,7 @@
    height: 50px;
    padding: 10px;
    border: 1px solid #ff004c;
-   background: #1A1A1D;
+   background: #171719;
    border-radius: 5px;
    outline: none;
    color: #fff;
@@ -423,7 +432,7 @@
    height: 50px;
    padding-left: 10px;
    border: 1px solid #ff004c;
-   background: #1A1A1D;
+   background: #171719;
    border-radius: 5px;
    outline: none;
    color: #fff;
@@ -451,7 +460,7 @@
    height: 50px;
    padding: 10px;
    border: 1px solid #ff004c;
-   background: #1A1A1D;
+   background: #171719;
    border-radius: 5px;
    outline: none;
    color: #fff;
@@ -475,7 +484,7 @@
 .coinfo{
    width: 100%;
    height: 700px;
-   background-color: #1A1A1D;
+   background-color: #171719;
    position: relative;
 }
 .coinfo .fcol label{
@@ -491,7 +500,7 @@
    height: 50px;
    padding: 10px;
    border: 1px solid #ff004c;
-   background: #1A1A1D;
+   background: #171719;
    border-radius: 5px;
    outline: none;
    color: #fff;
@@ -519,7 +528,7 @@
    height: 50px;
    padding: 10px;
    border: 1px solid #ff004c;
-   background: #1A1A1D;
+   background: #171719;
    border-radius: 5px;
    outline: none;
    color: #fff;
@@ -547,7 +556,7 @@
    height: 50px;
    padding-left: 10px;
    border: 1px solid #ff004c;
-   background: #1A1A1D;
+   background: #171719;
    border-radius: 5px;
    outline: none;
    color: #fff;
@@ -580,7 +589,7 @@
    width: 833px;
    padding: 10px;
    border: 1px solid #ff004c;
-   background: #1A1A1D;
+   background: #171719;
    border-radius: 5px;
    outline: none;
    color: #fff;
@@ -610,13 +619,13 @@
 }
 .coinfo button:active{
    background-color: white;
-   color: #1A1A1D;
+   color: #171719;
 }
 .footer{
    width: 77%;
    padding:75px 15% 60px;
    background: #e80247;
-   color: #1A1A1D;
+   color: #171719;
    display: flex;
 }
 .footer div{
@@ -634,7 +643,7 @@
 .col-1 a{
    display: block;
    text-decoration: none;
-   color: #1A1A1D;
+   color: #171719;
    margin-bottom: 10px;
 }
 .col-2 form input {
@@ -646,13 +655,13 @@
    margin-bottom: 20px;
    outline: none;
    border: 3px solid #950740;
-   background-color: #1A1A1D;
+   background-color: #171719;
    color: white;
 }
 .col-2 form button{
    background: transparent;
    border: 2px solid #950740;
-   color: #1A1A1D;
+   color: #171719;
    border-radius: 15px;
    padding: 10px 30px;
    font-size: 15px;
@@ -703,7 +712,7 @@
    padding-top: 3px;
    padding-bottom: 20px;
    color: #ff004c;
-   background-color: #1A1A1D;
+   background-color: #171719;
 }
 .dnprocess h1{
    font-size: 70px;
@@ -805,7 +814,7 @@
 }
 .ratinfo button:active{
    background-color: white;
-   color: #1A1A1D;  
+   color: #171719;  
 }
 .contact-left{
   flex-basis: 35%;
