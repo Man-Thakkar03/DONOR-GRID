@@ -1,3 +1,11 @@
+# 👨‍💻 Personal Portfolio
+
+[![GitHub Repo Size](https://img.shields.io/github/repo-size/Man-Thakkar03/Personal-Portfolio?color=blue&style=for-the-badge)](https://github.com/Man-Thakkar03/Personal-Portfolio)
+[![GitHub Stars](https://img.shields.io/github/stars/Man-Thakkar03/Personal-Portfolio?style=for-the-badge&color=yellow)](https://github.com/Man-Thakkar03/Personal-Portfolio/stargazers)
+[![GitHub License](https://img.shields.io/github/license/Man-Thakkar03/Personal-Portfolio?style=for-the-badge&color=green)](https://github.com/Man-Thakkar03/Personal-Portfolio/blob/main/LICENSE)
+[![GitHub Issues](https://img.shields.io/github/issues/Man-Thakkar03/Personal-Portfolio?style=for-the-badge&color=red)](https://github.com/Man-Thakkar03/Personal-Portfolio/issues)
+
+---
 
 ## 🔗 Live Demo
 
